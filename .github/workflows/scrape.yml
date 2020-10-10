@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl [INSERT URL HERE] > results.csv
+        curl https://www2.census.gov/geo/maps/DC2020/ACO20/NRFU_Completion_ACO.csv > NRFU_Completion_ACO.csv
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
